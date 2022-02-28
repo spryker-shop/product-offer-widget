@@ -1,0 +1,5 @@
+{
+    "include": {
+        "spryker/product-offer-storage": "Provides dependency for included widgets"
+    }
+}
