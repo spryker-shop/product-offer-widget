@@ -21,25 +21,16 @@ class ShoppingListProductOfferWidget extends AbstractWidget
      */
     protected const PARAMETER_IS_PRODUCT_OFFER_ACTIVE = 'isProductOfferActive';
 
-    /**
-     * @param \Generated\Shared\Transfer\ProductViewTransfer $productViewTransfer
-     */
     public function __construct(ProductViewTransfer $productViewTransfer)
     {
         $this->addIsProductOfferActiveParameter($productViewTransfer);
     }
 
-    /**
-     * @return string
-     */
     public static function getName(): string
     {
         return 'ShoppingListProductOfferWidget';
     }
 
-    /**
-     * @return string
-     */
     public static function getTemplate(): string
     {
         return '';

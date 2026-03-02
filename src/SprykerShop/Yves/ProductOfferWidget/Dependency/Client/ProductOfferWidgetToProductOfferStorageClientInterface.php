@@ -11,10 +11,5 @@ use Generated\Shared\Transfer\ProductOfferStorageTransfer;
 
 interface ProductOfferWidgetToProductOfferStorageClientInterface
 {
-    /**
-     * @param string $productOfferReference
-     *
-     * @return \Generated\Shared\Transfer\ProductOfferStorageTransfer|null
-     */
     public function findProductOfferStorageByReference(string $productOfferReference): ?ProductOfferStorageTransfer;
 }

@@ -24,11 +24,6 @@ class ProductOfferWidgetToProductOfferStorageClientBridge implements ProductOffe
         $this->productOfferStorageClient = $productOfferStorageClient;
     }
 
-    /**
-     * @param string $productOfferReference
-     *
-     * @return \Generated\Shared\Transfer\ProductOfferStorageTransfer|null
-     */
     public function findProductOfferStorageByReference(string $productOfferReference): ?ProductOfferStorageTransfer
     {
         return $this->productOfferStorageClient->findProductOfferStorageByReference($productOfferReference);
